@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+  pdftitle={Euclidean Support Modes of the Regular Dodecahedron},
+  pdfauthor={Scott Allen Cave},
+  pdfsubject={Euclidean convex geometry and dodecahedral support modes}
+}
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+\raggedbottom
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Euclidean Support Modes of the Regular Dodecahedron\\
+\large Scale, Shape, and Symmetry from Six Opposite-Face Distances}
+\author{Scott Allen Cave}
+\date{July 11, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper develops a Euclidean scale-shape decomposition for a
+six-parameter family based on the regular dodecahedron. Fix the twelve
+regular dodecahedral face-normal directions and assign one positive support
+number to each of the six opposite-face pairs. Their supporting slabs
+intersect in an origin-centered, centrally symmetric convex polytope.
+
+The resulting support register lies in \(\mathbb R^6\) and decomposes
+orthogonally into a one-dimensional uniform subspace and a
+five-dimensional zero-mean subspace. Common multiplication of all six
+support numbers produces Euclidean homothety. While the defining planes
+remain active facets, the uniform ray is the unique regular similarity
+family, and every nonzero zero-mean residual produces a non-homothetic
+support variation.
+
+The decomposition is compatible with the rotational symmetry group of the
+regular dodecahedron. Within the connected support chamber preserving
+dodecahedral incidence, each nonregular state is described uniquely by mean
+support, shape magnitude, and normalized shape direction. After removal of
+absolute scale, the normalized directions lie on a four-sphere in the
+five-dimensional zero-mean subspace.
+
+The construction uses only Euclidean geometry, convex polytope theory,
+finite-dimensional real linear algebra, and elementary symmetry actions.
+It does not classify arbitrary dodecahedra and asserts no mechanical,
+dynamical, or physical interpretation.
+\end{abstract}
+
+\tableofcontents
+
+\input{sections/01-introduction}
+\input{sections/02-euclidean-setting}
+\input{sections/03-canonical-split}
+\input{sections/04-euclidean-scale-shape}
+\input{sections/05-consequences}
+\input{sections/06-examples}
+\input{sections/07-discussion}
+\input{sections/08-conclusion}
+
+\end{document}

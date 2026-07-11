@@ -1,0 +1,339 @@
+\section{Coordinate Consequences}
+
+The Euclidean scale-shape theorem identifies the uniform component of the
+support register with regular scale and the zero-mean residual with
+non-homothetic support variation. This section records the resulting
+coordinates.
+
+Let
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r
+\in\mathcal C_D,
+\qquad
+\sum_{i=1}^{6}r_i=0.
+\]
+
+\subsection{Mean support and residual}
+
+The mean support is
+\[
+\bar h
+=
+\frac{1}{6}\sum_{i=1}^{6}h_i.
+\]
+
+Relative to the reference regular dodecahedron
+\[
+D=P(h_0\mathbf 1),
+\]
+the associated regular scale ratio is
+\[
+\lambda(\mathbf h)
+=
+\frac{\bar h}{h_0}.
+\]
+
+Hence
+\[
+P(\bar h\,\mathbf 1)
+=
+\lambda(\mathbf h)D.
+\]
+
+The shape residual is
+\[
+\mathbf r
+=
+\mathbf h-\bar h\,\mathbf 1,
+\]
+with coordinates
+\[
+r_i=h_i-\bar h.
+\]
+
+Adding a common amount to every support coordinate leaves the residual
+unchanged:
+\[
+(\mathbf h+a\mathbf 1)
+-
+\overline{(\mathbf h+a\mathbf 1)}\,\mathbf 1
+=
+\mathbf r.
+\]
+
+Under positive scaling,
+\[
+\mathbf h\longmapsto c\mathbf h,
+\]
+one has
+\[
+\bar h\longmapsto c\bar h
+\qquad\text{and}\qquad
+\mathbf r\longmapsto c\mathbf r.
+\]
+
+\subsection{Shape magnitude}
+
+Define
+\[
+\sigma(\mathbf h)
+=
+\|\mathbf r\|
+=
+\left(
+\sum_{i=1}^{6}(h_i-\bar h)^2
+\right)^{1/2}.
+\]
+
+This is the Euclidean distance from \(\mathbf h\) to the uniform subspace:
+\[
+\sigma(\mathbf h)
+=
+\operatorname{dist}(\mathbf h,U).
+\]
+
+\begin{corollary}[Regularity criterion]
+For every \(\mathbf h\in\mathcal C_D\),
+\[
+\sigma(\mathbf h)=0
+\]
+if and only if \(P(\mathbf h)\) is regular.
+\end{corollary}
+
+The quantity \(\sigma\) measures support-space departure from the regular
+ray. It is not asserted to be a mechanical strain, energy, or physical
+deformation cost.
+
+\subsection{Shape direction}
+
+When
+\[
+\sigma(\mathbf h)>0,
+\]
+define the normalized residual
+\[
+\widehat{\mathbf r}
+=
+\frac{\mathbf r}{\|\mathbf r\|}.
+\]
+
+Then
+\[
+\widehat{\mathbf r}\in H,
+\qquad
+\|\widehat{\mathbf r}\|=1.
+\]
+
+Since \(\dim H=5\), normalized shape directions lie on
+\[
+S(H)
+=
+\left\{
+\mathbf v\in H:
+\|\mathbf v\|=1
+\right\}
+\cong S^4.
+\]
+
+Every nonregular support register therefore has the unique form
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1
++
+\sigma\widehat{\mathbf r}.
+\]
+
+Thus a nonregular state is specified by
+
+\begin{enumerate}
+\item mean support \(\bar h\);
+\item shape magnitude \(\sigma\); and
+\item normalized shape direction \(\widehat{\mathbf r}\in S^4\).
+\end{enumerate}
+
+At a regular state, \(\sigma=0\), and no shape direction is defined.
+
+\subsection{Scale-free shape}
+
+Because
+\[
+\sigma(c\mathbf h)=c\sigma(\mathbf h),
+\]
+the magnitude \(\sigma\) depends on absolute scale.
+
+Define the relative shape magnitude
+\[
+\eta(\mathbf h)
+=
+\frac{\sigma(\mathbf h)}{\bar h}.
+\]
+
+Since \(\bar h>0\) on the positive support domain, \(\eta\) is well defined.
+It is invariant under positive scaling:
+\[
+\eta(c\mathbf h)
+=
+\eta(\mathbf h).
+\]
+
+Define also the normalized support register
+\[
+\mathbf q
+=
+\frac{\mathbf h}{\bar h}.
+\]
+
+Then
+\[
+\frac{1}{6}\sum_{i=1}^{6}q_i=1
+\]
+and
+\[
+\mathbf q
+=
+\mathbf 1+\eta\widehat{\mathbf r}.
+\]
+
+Equivalently,
+\[
+\mathbf h
+=
+\bar h
+\left(
+\mathbf 1+\eta\widehat{\mathbf r}
+\right).
+\]
+
+The factor \(\bar h\) records absolute scale. The pair
+\[
+(\eta,\widehat{\mathbf r})
+\]
+records scale-free support shape.
+
+\subsection{Orthogonal identity}
+
+The canonical decomposition is orthogonal, so
+\[
+\|\mathbf h\|^2
+=
+\|\bar h\,\mathbf 1\|^2+\|\mathbf r\|^2.
+\]
+
+Since
+\[
+\|\mathbf 1\|^2=6,
+\]
+this becomes
+\[
+\|\mathbf h\|^2
+=
+6\bar h^2+\sigma^2.
+\]
+
+After division by \(\bar h^2\),
+\[
+\frac{\|\mathbf h\|^2}{\bar h^2}
+=
+6+\eta^2.
+\]
+
+These are identities in the Euclidean metric on support space. They are not
+formulas for volume, surface area, energy, or any other physical quantity.
+
+\subsection{Symmetry behavior}
+
+For every rotational symmetry \(g\),
+\[
+\overline{\rho(g)\mathbf h}
+=
+\bar h.
+\]
+
+Because \(\rho(g)\) is orthogonal,
+\[
+\sigma(\rho(g)\mathbf h)
+=
+\sigma(\mathbf h)
+\]
+and
+\[
+\eta(\rho(g)\mathbf h)
+=
+\eta(\mathbf h).
+\]
+
+The normalized direction transforms equivariantly:
+\[
+\widehat{\mathbf r}(\rho(g)\mathbf h)
+=
+\rho(g)\widehat{\mathbf r}(\mathbf h).
+\]
+
+Thus \(\bar h\), \(\sigma\), and \(\eta\) are scalar symmetry invariants,
+whereas \(\widehat{\mathbf r}\) retains the oriented distribution of support
+variation among the six face pairs.
+
+\subsection{Shape space and basis choice}
+
+The five-dimensional subspace
+\[
+H
+=
+\left\{
+\mathbf r\in\mathbb R^6:
+\sum_i r_i=0
+\right\}
+\]
+is canonical. An ordered basis within it is not.
+
+For example,
+\[
+\begin{aligned}
+\mathbf b_1&=(1,-1,0,0,0,0),\\
+\mathbf b_2&=(0,1,-1,0,0,0),\\
+\mathbf b_3&=(0,0,1,-1,0,0),\\
+\mathbf b_4&=(0,0,0,1,-1,0),\\
+\mathbf b_5&=(0,0,0,0,1,-1)
+\end{aligned}
+\]
+span \(H\), but depend on the chosen ordering of the opposite-face pairs.
+
+A preferred basis would require an additional criterion. No such choice is
+made here.
+
+\subsection{Summary}
+
+For every support register in \(\mathcal C_D\),
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r.
+\]
+
+For nonregular states,
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1
++
+\sigma\widehat{\mathbf r}
+=
+\bar h
+\left(
+\mathbf 1+\eta\widehat{\mathbf r}
+\right).
+\]
+
+The resulting coordinates separate
+
+\begin{itemize}
+\item absolute scale through \(\bar h\);
+\item absolute shape departure through \(\sigma\);
+\item scale-free shape departure through \(\eta\); and
+\item shape direction through \(\widehat{\mathbf r}\in S^4\).
+\end{itemize}
+
+Section~6 applies these coordinates to representative support registers.

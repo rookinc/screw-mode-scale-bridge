@@ -1,0 +1,306 @@
+\section{The Canonical Split of the Support Register}
+
+The support register
+\[
+\mathbf h=(h_1,\ldots,h_6)
+\]
+is a vector in \(\mathbb R^6\). This section separates it into a common
+component shared by all six coordinates and a complementary zero-mean
+component.
+
+The decomposition is standard linear algebra. Its Euclidean meaning is
+proved in Section~4.
+
+\subsection{Uniform and zero-mean subspaces}
+
+Let
+\[
+\mathbf 1=(1,1,1,1,1,1)
+\]
+and define the uniform subspace
+\[
+U=\operatorname{span}\{\mathbf 1\}.
+\]
+
+A register is uniform precisely when all six coordinates are equal.
+
+Define also
+\[
+H=
+\left\{
+\mathbf r\in\mathbb R^6:
+\sum_{i=1}^{6}r_i=0
+\right\}.
+\]
+
+The subspace \(H\) is the kernel of the nonzero linear functional
+\[
+\mathbf x\longmapsto\sum_{i=1}^{6}x_i,
+\]
+and therefore
+\[
+\dim H=5.
+\]
+
+\subsection{Mean support and residual}
+
+For any
+\[
+\mathbf h=(h_1,\ldots,h_6)\in\mathbb R^6,
+\]
+define its mean support by
+\[
+\bar h
+=
+\frac{1}{6}\sum_{i=1}^{6}h_i.
+\]
+
+The corresponding uniform component is
+\[
+\mathbf h_U
+=
+\bar h\,\mathbf 1.
+\]
+
+Define the residual by
+\[
+\mathbf r
+=
+\mathbf h-\bar h\,\mathbf 1.
+\]
+
+Its coordinate sum vanishes:
+\[
+\sum_{i=1}^{6}r_i
+=
+\sum_{i=1}^{6}h_i-6\bar h
+=
+0.
+\]
+
+Hence
+\[
+\mathbf r\in H.
+\]
+
+\subsection{Canonical decomposition}
+
+\begin{theorem}[Canonical decomposition]
+Every vector \(\mathbf h\in\mathbb R^6\) admits a unique decomposition
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r,
+\]
+where
+\[
+\bar h\,\mathbf 1\in U
+\qquad\text{and}\qquad
+\mathbf r\in H.
+\]
+\end{theorem}
+
+\begin{proof}
+The definitions above give existence.
+
+For uniqueness, suppose
+\[
+\mathbf h
+=
+\mathbf u_1+\mathbf r_1
+=
+\mathbf u_2+\mathbf r_2,
+\]
+with
+\[
+\mathbf u_1,\mathbf u_2\in U
+\qquad\text{and}\qquad
+\mathbf r_1,\mathbf r_2\in H.
+\]
+
+Then
+\[
+\mathbf u_1-\mathbf u_2
+=
+\mathbf r_2-\mathbf r_1
+\in U\cap H.
+\]
+
+If \(a\mathbf 1\in U\cap H\), then
+\[
+0=\sum_{i=1}^{6}a=6a,
+\]
+so \(a=0\). Thus
+\[
+U\cap H=\{\mathbf 0\},
+\]
+and both components are unique.
+\end{proof}
+
+Therefore
+\[
+\mathbb R^6=U\oplus H.
+\]
+
+\subsection{Orthogonality}
+
+Equip \(\mathbb R^6\) with the standard inner product
+\[
+\langle\mathbf x,\mathbf y\rangle
+=
+\sum_{i=1}^{6}x_i y_i.
+\]
+
+For every \(\mathbf r\in H\),
+\[
+\langle\mathbf 1,\mathbf r\rangle
+=
+\sum_{i=1}^{6}r_i
+=
+0.
+\]
+
+Hence
+\[
+H=U^\perp,
+\]
+and the direct sum is orthogonal:
+\[
+\mathbb R^6
+=
+U\mathbin{\perp}H.
+\]
+
+In particular,
+\[
+\left\langle
+\bar h\,\mathbf 1,
+\mathbf r
+\right\rangle
+=
+0.
+\]
+
+Thus
+\[
+\|\mathbf h\|^2
+=
+6\bar h^2+\|\mathbf r\|^2.
+\]
+
+\subsection{Projection operators}
+
+Let \(J\) be the \(6\times6\) all-ones matrix. Define
+\[
+P_U=\frac{1}{6}J
+\]
+and
+\[
+P_H=I-\frac{1}{6}J.
+\]
+
+Then
+\[
+P_U\mathbf h
+=
+\bar h\,\mathbf 1
+\]
+and
+\[
+P_H\mathbf h
+=
+\mathbf r.
+\]
+
+Since
+\[
+J^2=6J,
+\]
+the operators satisfy
+\[
+P_U^2=P_U,
+\qquad
+P_H^2=P_H,
+\]
+\[
+P_UP_H=P_HP_U=0,
+\]
+and
+\[
+P_U+P_H=I.
+\]
+
+They are therefore the complementary orthogonal projections onto \(U\)
+and \(H\).
+
+\subsection{Symmetry compatibility}
+
+Every rotational symmetry of the regular dodecahedron acts on support space
+by a permutation matrix \(\rho(g)\).
+
+Coordinate permutations fix \(\mathbf 1\) and preserve coordinate sums.
+Therefore
+\[
+\rho(g)U=U
+\qquad\text{and}\qquad
+\rho(g)H=H.
+\]
+
+The projection operators commute with the symmetry action:
+\[
+\rho(g)P_U=P_U\rho(g),
+\qquad
+\rho(g)P_H=P_H\rho(g).
+\]
+
+Consequently,
+\[
+P_U(\rho(g)\mathbf h)
+=
+\rho(g)(P_U\mathbf h)
+\]
+and
+\[
+P_H(\rho(g)\mathbf h)
+=
+\rho(g)(P_H\mathbf h).
+\]
+
+The split is therefore independent of the arbitrary labeling of the six
+opposite-face pairs.
+
+\subsection{Positive support registers}
+
+The algebraic decomposition applies to every vector in \(\mathbb R^6\).
+The geometric support realization requires
+\[
+\mathbf h\in\mathbb R_{>0}^6.
+\]
+
+If
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r
+\]
+is positive, then
+\[
+\bar h+r_i>0
+\]
+for every \(i\), and necessarily
+\[
+\bar h>0.
+\]
+
+The residual may contain positive and negative entries. These are deviations
+from a positive mean support, not negative support distances.
+
+\subsection{Interpretation boundary}
+
+The canonical split establishes one uniform coordinate and five independent
+zero-mean coordinates.
+
+It does not by itself prove that the uniform component is Euclidean scale
+or that the residual is geometric shape variation.
+
+Section~4 proves those conclusions from the support realization.

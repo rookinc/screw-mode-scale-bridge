@@ -1,0 +1,391 @@
+\section{Euclidean Scale and Shape}
+
+Section~3 established the orthogonal decomposition
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r,
+\qquad
+\sum_{i=1}^{6}r_i=0.
+\]
+
+This section proves its geometric meaning for the fixed-normal support
+realization
+\[
+P(\mathbf h)
+=
+\left\{
+\mathbf x\in\mathbb E^3:
+|\mathbf n_i\cdot\mathbf x|\le h_i
+\text{ for all }i
+\right\}.
+\]
+
+The uniform direction is exactly the regular Euclidean scale direction.
+Within the dodecahedral support chamber, a nonzero residual gives a
+non-homothetic shape variation.
+
+\subsection{Support scaling}
+
+\begin{theorem}[Support scaling]
+For every
+\[
+\mathbf h\in\mathbb R_{>0}^6
+\]
+and every \(c>0\),
+\[
+P(c\mathbf h)=cP(\mathbf h).
+\]
+\end{theorem}
+
+\begin{proof}
+Let \(\mathbf x\in P(c\mathbf h)\) and set
+\[
+\mathbf y=\frac{1}{c}\mathbf x.
+\]
+Then
+\[
+|\mathbf n_i\cdot\mathbf y|
+=
+\frac{1}{c}|\mathbf n_i\cdot\mathbf x|
+\le h_i
+\]
+for every \(i\). Hence
+\[
+\mathbf y\in P(\mathbf h),
+\]
+so
+\[
+\mathbf x\in cP(\mathbf h).
+\]
+
+Conversely, if
+\[
+\mathbf x=c\mathbf y
+\]
+with \(\mathbf y\in P(\mathbf h)\), then
+\[
+|\mathbf n_i\cdot\mathbf x|
+=
+c|\mathbf n_i\cdot\mathbf y|
+\le ch_i.
+\]
+Thus
+\[
+\mathbf x\in P(c\mathbf h).
+\]
+\end{proof}
+
+This result holds throughout the positive support domain and does not
+require preservation of dodecahedral incidence.
+
+\subsection{The regular similarity family}
+
+Let
+\[
+D=P(h_0\mathbf 1)
+\]
+be the reference regular dodecahedron.
+
+For every \(h>0\),
+\[
+P(h\mathbf 1)
+=
+\frac{h}{h_0}D.
+\]
+
+Therefore the positive uniform ray
+\[
+U_+
+=
+\{h\mathbf 1:h>0\}
+\]
+realizes the regular origin-centered similarity family with the fixed
+normal directions.
+
+\subsection{Uniqueness of the regular scale direction}
+
+For a compact convex set \(K\subset\mathbb E^3\), define its support value
+in the unit direction \(\mathbf u\) by
+\[
+s_K(\mathbf u)
+=
+\max_{\mathbf x\in K}
+\mathbf u\cdot\mathbf x.
+\]
+
+If the plane
+\[
+\mathbf n_i\cdot\mathbf x=h_i
+\]
+supports a genuine facet of \(P(\mathbf h)\), then
+\[
+s_{P(\mathbf h)}(\mathbf n_i)=h_i.
+\]
+
+\begin{theorem}[Uniqueness of the regular scale direction]
+Let
+\[
+\mathbf h\in\mathbb R_{>0}^6,
+\]
+and assume that all twelve defining planes of \(P(\mathbf h)\) support
+genuine facets. If
+\[
+P(\mathbf h)=cD
+\]
+for some \(c>0\), then
+\[
+\mathbf h=ch_0\mathbf 1.
+\]
+\end{theorem}
+
+\begin{proof}
+For every \(i\),
+\[
+h_i
+=
+s_{P(\mathbf h)}(\mathbf n_i).
+\]
+
+Since support values scale under homothety,
+\[
+s_{P(\mathbf h)}(\mathbf n_i)
+=
+c\,s_D(\mathbf n_i)
+=
+ch_0.
+\]
+
+Thus
+\[
+h_i=ch_0
+\]
+for all \(i\), and hence
+\[
+\mathbf h=ch_0\mathbf 1.
+\]
+\end{proof}
+
+The active-facet assumption excludes redundant inequalities whose written
+support values are not recoverable from the realized polytope.
+
+\subsection{Residual variation}
+
+Write
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r,
+\qquad
+\mathbf r\in H.
+\]
+
+If
+\[
+\mathbf r=\mathbf 0,
+\]
+then
+\[
+\mathbf h=\bar h\,\mathbf 1,
+\]
+and \(P(\mathbf h)\) is regular.
+
+If
+\[
+\mathbf r\ne\mathbf 0,
+\]
+then the six support numbers are not all equal. Under the active-facet
+condition, the uniqueness theorem shows that \(P(\mathbf h)\) cannot be a
+homothetic copy of the regular dodecahedron.
+
+\begin{corollary}[Residual criterion]
+Assume that all twelve defining planes remain facet-defining. Then
+\[
+\mathbf r=\mathbf 0
+\]
+if and only if \(P(\mathbf h)\) lies in the regular similarity family.
+\end{corollary}
+
+\subsection{Local preservation of dodecahedral incidence}
+
+Positive support numbers do not alone guarantee the regular dodecahedral
+combinatorial type. The required stability holds locally.
+
+\begin{theorem}[Local stability of dodecahedral incidence]
+There exists an open neighborhood
+\[
+\mathcal U\subset\mathbb R_{>0}^6
+\]
+of \(h_0\mathbf 1\) such that every \(P(\mathbf h)\) with
+\[
+\mathbf h\in\mathcal U
+\]
+has the same face-vertex incidence structure as the regular dodecahedron.
+\end{theorem}
+
+\begin{proof}
+Write the twelve signed unit normals as
+\[
+\mathbf m_1,\ldots,\mathbf m_{12},
+\]
+and let \(p(a)\in\{1,\ldots,6\}\) identify the opposite-face pair
+containing \(\mathbf m_a\).
+
+Then
+\[
+P(\mathbf h)
+=
+\left\{
+\mathbf x:
+\mathbf m_a\cdot\mathbf x
+\le
+h_{p(a)}
+\text{ for }a=1,\ldots,12
+\right\}.
+\]
+
+The regular dodecahedron is simple, so each vertex is determined by an
+invertible triple
+\[
+T=\{a,b,c\}
+\]
+of incident facet planes. Let
+\[
+N_T
+=
+\begin{pmatrix}
+\mathbf m_a^{\mathsf T}\\
+\mathbf m_b^{\mathsf T}\\
+\mathbf m_c^{\mathsf T}
+\end{pmatrix}.
+\]
+
+The corresponding intersection point is
+\[
+\mathbf v_T(\mathbf h)
+=
+N_T^{-1}
+\begin{pmatrix}
+h_{p(a)}\\
+h_{p(b)}\\
+h_{p(c)}
+\end{pmatrix},
+\]
+which depends continuously on \(\mathbf h\).
+
+At the regular state, every nonincident facet inequality is strict at each
+regular vertex. Because only finitely many such inequalities occur, their
+minimum slack is positive. Hence all regular vertex triples remain feasible
+throughout a sufficiently small neighborhood.
+
+Conversely, every invertible triple that is not a regular vertex violates
+at least one defining inequality strictly at the regular state. Finiteness
+and continuity allow the neighborhood to be chosen so that no such triple
+becomes feasible.
+
+After also preserving positivity, exactly the original vertex triples
+remain feasible. Therefore the vertex-facet incidence structure, and hence
+the full dodecahedral combinatorial type, is unchanged.
+\end{proof}
+
+\subsection{The dodecahedral support chamber}
+
+\begin{definition}[Dodecahedral support chamber]
+Let \(\mathcal C_D\) be the connected component containing
+\(h_0\mathbf 1\) of the set of positive support registers for which
+
+\begin{enumerate}
+\item all twelve defining planes support genuine facets;
+\item the polytope is simple; and
+\item its face-vertex incidence structure is dodecahedral.
+\end{enumerate}
+\]
+\end{definition}
+
+The local stability theorem guarantees that \(\mathcal C_D\) contains an
+open neighborhood of the regular state.
+
+No claim is made that
+\[
+\mathcal C_D=\mathbb R_{>0}^6.
+\]
+
+Its boundary may contain facet loss, edge contraction, vertex collision, or
+other changes of combinatorial type.
+
+\subsection{Euclidean scale-shape theorem}
+
+\begin{theorem}[Euclidean scale-shape decomposition]
+Let
+\[
+\mathbf h\in\mathcal C_D
+\]
+and write
+\[
+\mathbf h
+=
+\bar h\,\mathbf 1+\mathbf r,
+\qquad
+\sum_{i=1}^{6}r_i=0.
+\]
+
+Then:
+
+\begin{enumerate}
+\item \(\bar h\,\mathbf 1\) is the unique regular support register with mean
+support \(\bar h\);
+
+\item for every \(c>0\),
+\[
+P(c\mathbf h)=cP(\mathbf h);
+\]
+
+\item \(P(\mathbf h)\) is regular if and only if
+\[
+\mathbf r=\mathbf 0;
+\]
+
+\item if
+\[
+\mathbf r\ne\mathbf 0,
+\]
+then \(P(\mathbf h)\) is not an origin-centered homothetic copy of \(D\).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The first statement follows from the regular uniform family and uniqueness
+of the regular scale direction. The second is the support-scaling theorem.
+
+If \(\mathbf r=\mathbf 0\), then the support register is uniform and the
+realization is regular. Conversely, a regular realization in
+\(\mathcal C_D\) must have equal support values, so its residual vanishes.
+The final statement follows immediately.
+\end{proof}
+
+Thus
+\[
+\text{uniform component}
+\longleftrightarrow
+\text{regular Euclidean scale},
+\]
+while
+\[
+\text{nonzero zero-mean residual}
+\longleftrightarrow
+\text{non-homothetic support shape variation}.
+\]
+
+\subsection{Boundary}
+
+The theorem applies only to the fixed-normal, origin-centered, centrally
+symmetric realization family and only inside \(\mathcal C_D\).
+
+It does not classify arbitrary Euclidean dodecahedra or arbitrary
+deformations of the regular solid. It excludes varying normal directions,
+unequal opposite supports, translations, independent face rotations, and
+arbitrary vertex motion.
+
+The terms \emph{scale} and \emph{shape} are used only in their ordinary
+Euclidean sense. No mechanics, elasticity, force, energy, dynamics, or
+physical expansion is implied.

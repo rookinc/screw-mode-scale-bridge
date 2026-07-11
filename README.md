@@ -1,22 +1,28 @@
-# Screw-Mode Scale Bridge
+# Euclidean Support Modes of the Regular Dodecahedron
 
-A bridge from fixed local screw phase to global dodecahedral scale and shape.
+Scale, shape, and symmetry from six opposite-face distances.
 
 ## Scope
 
-- Six opposite-face screw axes
-- Isotropic and deviatoric mode decomposition
-- Fixed local cube phase
-- Global dodecahedral scale
-- Shape-preserving and shape-changing modes
+- Regular dodecahedron in three-dimensional Euclidean space
+- Six opposite-face support distances
+- Fixed face-normal realization family
+- Canonical uniform and zero-mean decomposition
+- Euclidean scale and shape
+- Local preservation of dodecahedral incidence
+- Finite-dimensional real linear algebra
+- Classical convex geometry
 
 ## Boundary
 
-- Euclidean finite geometry only.
-- No force law.
-- No cosmology or physical expansion claim.
-- No GR, G900, or Gap A admission.
+- No force law
+- No mechanics or elasticity
+- No continuum model
+- No physical expansion claim
+- No cosmology
+- No GR, G900, or Gap A admission
+- No specialized formalism required
 
 ## Status
 
-Initial project scaffold.
+LaTeX manuscript scaffold initialized.

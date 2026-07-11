@@ -1,0 +1,370 @@
+\section{Representative Support Modes}
+
+This section applies the scale-shape coordinates to several explicit support
+registers. The examples are representatives only. They do not define a
+canonical basis of the five-dimensional shape space.
+
+Let
+\[
+\mathbf h_0=h_0\mathbf 1,
+\qquad
+h_0>0,
+\]
+be the reference regular support register. Every perturbed register below is
+assumed to remain in the dodecahedral support chamber \(\mathcal C_D\).
+
+\subsection{Regular state and uniform scale}
+
+For the reference state
+\[
+\mathbf h=h_0\mathbf 1,
+\]
+one has
+\[
+\bar h=h_0,
+\qquad
+\mathbf r=\mathbf 0,
+\qquad
+\sigma=0,
+\qquad
+\eta=0.
+\]
+
+The realization is the regular dodecahedron:
+\[
+P(\mathbf h)=D.
+\]
+
+More generally, let
+\[
+\mathbf h=ch_0\mathbf 1,
+\qquad
+c>0.
+\]
+
+Then
+\[
+\bar h=ch_0,
+\qquad
+\mathbf r=\mathbf 0,
+\qquad
+\sigma=\eta=0,
+\]
+and
+\[
+P(\mathbf h)=cD.
+\]
+
+Thus the positive uniform ray changes only regular Euclidean scale.
+
+\subsection{Balanced exchange between two face pairs}
+
+Let
+\[
+\mathbf v_1=(1,-1,0,0,0,0)
+\]
+and consider
+\[
+\mathbf h
+=
+h_0\mathbf 1+a\mathbf v_1.
+\]
+
+Since \(\mathbf v_1\) has zero coordinate sum,
+\[
+\bar h=h_0.
+\]
+
+The residual is
+\[
+\mathbf r
+=
+a(1,-1,0,0,0,0),
+\]
+with magnitude
+\[
+\sigma
+=
+\sqrt{2}\,|a|.
+\]
+
+For \(a\ne0\),
+\[
+\widehat{\mathbf r}
+=
+\operatorname{sgn}(a)
+\frac{1}{\sqrt{2}}
+(1,-1,0,0,0,0),
+\]
+and
+\[
+\eta
+=
+\frac{\sqrt{2}\,|a|}{h_0}.
+\]
+
+One opposite-face pair moves outward relative to the mean, one moves inward,
+and four remain unchanged. Since the residual is nonzero, the realization is
+not homothetic to \(D\).
+
+\subsection{One dominant face pair}
+
+Let
+\[
+\mathbf v_2
+=
+(5,-1,-1,-1,-1,-1)
+\]
+and consider
+\[
+\mathbf h
+=
+h_0\mathbf 1+a\mathbf v_2.
+\]
+
+Again,
+\[
+\bar h=h_0.
+\]
+
+The residual satisfies
+\[
+\mathbf r
+=
+a(5,-1,-1,-1,-1,-1),
+\]
+and
+\[
+\sigma
+=
+\sqrt{30}\,|a|.
+\]
+
+For \(a\ne0\),
+\[
+\widehat{\mathbf r}
+=
+\operatorname{sgn}(a)
+\frac{1}{\sqrt{30}}
+(5,-1,-1,-1,-1,-1),
+\]
+with
+\[
+\eta
+=
+\frac{\sqrt{30}\,|a|}{h_0}.
+\]
+
+This register distinguishes one opposite-face pair from the remaining five.
+A different dominant pair gives a symmetry-related example.
+
+\subsection{A four-pair balanced mode}
+
+Let
+\[
+\mathbf v_3
+=
+(1,1,-1,-1,0,0)
+\]
+and consider
+\[
+\mathbf h
+=
+h_0\mathbf 1+a\mathbf v_3.
+\]
+
+Then
+\[
+\bar h=h_0,
+\qquad
+\mathbf r
+=
+a(1,1,-1,-1,0,0),
+\]
+and
+\[
+\sigma=2|a|.
+\]
+
+For \(a\ne0\),
+\[
+\widehat{\mathbf r}
+=
+\operatorname{sgn}(a)
+\frac{1}{2}
+(1,1,-1,-1,0,0),
+\]
+while
+\[
+\eta
+=
+\frac{2|a|}{h_0}.
+\]
+
+Two face pairs move outward relative to the mean, two move inward, and two
+remain at the mean support.
+
+\subsection{Mixed scale and shape}
+
+Consider
+\[
+\mathbf h
+=
+(h_0+\delta)\mathbf 1
++
+a(1,-1,0,0,0,0),
+\]
+with
+\[
+h_0+\delta>0.
+\]
+
+Its mean support is
+\[
+\bar h=h_0+\delta,
+\]
+while its residual is
+\[
+\mathbf r
+=
+a(1,-1,0,0,0,0).
+\]
+
+Therefore
+\[
+\sigma
+=
+\sqrt{2}\,|a|
+\]
+and
+\[
+\eta
+=
+\frac{\sqrt{2}\,|a|}{h_0+\delta}.
+\]
+
+The same absolute residual has smaller relative magnitude when the mean
+support is larger. This separates the roles of \(\sigma\) and \(\eta\).
+
+\subsection{Normalized support registers}
+
+For the balanced two-pair example,
+\[
+\mathbf h
+=
+h_0\mathbf 1+a(1,-1,0,0,0,0),
+\]
+the normalized register is
+\[
+\mathbf q
+=
+\frac{\mathbf h}{h_0}
+=
+\left(
+1+\frac{a}{h_0},
+1-\frac{a}{h_0},
+1,1,1,1
+\right).
+\]
+
+Its mean coordinate is one.
+
+In general,
+\[
+\mathbf q
+=
+\frac{\mathbf h}{\bar h}
+=
+\mathbf 1+\eta\widehat{\mathbf r}.
+\]
+
+Thus normalized registers lie in the affine hyperplane
+\[
+\left\{
+\mathbf q\in\mathbb R^6:
+\frac{1}{6}\sum_i q_i=1
+\right\}.
+\]
+
+The regular shape is represented by \(\mathbf 1\). Positive scalar multiples
+of the same support register have the same normalized shape coordinate.
+
+\subsection{Symmetry-related registers}
+
+If \(g\) is a rotational symmetry and
+\[
+\mathbf h'=\rho(g)\mathbf h,
+\]
+then
+\[
+P(\mathbf h')=gP(\mathbf h).
+\]
+
+The two realizations are congruent, with permuted face-pair labels. They
+satisfy
+\[
+\bar h(\mathbf h')=\bar h(\mathbf h),
+\]
+\[
+\sigma(\mathbf h')=\sigma(\mathbf h),
+\]
+and
+\[
+\eta(\mathbf h')=\eta(\mathbf h).
+\]
+
+Their normalized residuals are related by
+\[
+\widehat{\mathbf r}(\mathbf h')
+=
+\rho(g)\widehat{\mathbf r}(\mathbf h).
+\]
+
+Examples in the same symmetry orbit therefore describe the same unlabeled
+Euclidean shape.
+
+\subsection{Admissibility}
+
+The algebraic formulas are valid whenever the support coordinates are
+positive. Their interpretation as dodecahedral modes requires
+\[
+\mathbf h\in\mathcal C_D.
+\]
+
+The local stability theorem guarantees this for sufficiently small
+perturbations of \(h_0\mathbf 1\). The paper does not compute a global
+maximum for \(a\) or \(\delta\).
+
+At the boundary of \(\mathcal C_D\), a facet may become redundant, an edge
+may contract, vertices may merge, or the incidence structure may change.
+Such states lie outside the admitted dodecahedral mode family.
+
+\subsection{Summary}
+
+The examples display three basic cases:
+
+\begin{enumerate}
+\item uniform registers change only scale;
+\item zero-mean registers change shape at fixed mean support; and
+\item mixed registers change both scale and shape.
+\end{enumerate}
+
+For each register,
+\[
+\bar h
+\]
+records mean scale,
+\[
+\sigma
+\]
+records absolute shape departure,
+\[
+\eta
+\]
+records scale-free shape departure, and
+\[
+\widehat{\mathbf r}\in S^4
+\]
+records shape direction.
+
+No mechanical or dynamical interpretation is introduced.

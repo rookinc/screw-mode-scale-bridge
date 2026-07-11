@@ -1,0 +1,234 @@
+\section{Euclidean Setting and Support Coordinates}
+
+This section defines the fixed-normal Euclidean family studied throughout
+the paper.
+
+\subsection{Ambient geometry}
+
+Let
+\[
+\mathbb E^3
+\]
+denote three-dimensional Euclidean space with its standard inner product.
+
+Let
+\[
+D\subset\mathbb E^3
+\]
+be a regular dodecahedron centered at the origin. Its twelve faces occur in
+six opposite pairs. Throughout the paper, the twelve face-normal directions
+of \(D\) remain fixed. Only the perpendicular distances of the corresponding
+supporting planes from the origin are allowed to vary.
+
+\subsection{Opposite-face normal pairs}
+
+Choose one outward unit normal from each opposite-face pair:
+\[
+\mathcal N
+=
+\{\mathbf n_1,\ldots,\mathbf n_6\}.
+\]
+
+The complete set of outward normal directions is
+\[
+\{\pm\mathbf n_1,\ldots,\pm\mathbf n_6\}.
+\]
+
+The numbering is arbitrary. Every rotational symmetry of the regular
+dodecahedron permutes these six antipodal normal pairs.
+
+\subsection{Support realization}
+
+Let
+\[
+\mathbf h=(h_1,\ldots,h_6)\in\mathbb R_{>0}^6.
+\]
+
+For each \(i\), the two supporting planes normal to
+\(\pm\mathbf n_i\) are
+\[
+\mathbf n_i\cdot\mathbf x=\pm h_i.
+\]
+
+They bound the slab
+\[
+S_i(h_i)
+=
+\left\{
+\mathbf x\in\mathbb E^3:
+|\mathbf n_i\cdot\mathbf x|\le h_i
+\right\}.
+\]
+
+\begin{definition}[Support realization]
+For
+\[
+\mathbf h\in\mathbb R_{>0}^6,
+\]
+define
+\[
+P(\mathbf h)
+=
+\bigcap_{i=1}^{6}S_i(h_i)
+=
+\left\{
+\mathbf x\in\mathbb E^3:
+|\mathbf n_i\cdot\mathbf x|\le h_i
+\text{ for all }i
+\right\}.
+\]
+The vector \(\mathbf h\) is the \emph{support register}.
+\end{definition}
+
+The set \(P(\mathbf h)\) is convex as an intersection of closed
+half-spaces. It is centrally symmetric because
+\[
+\mathbf x\in P(\mathbf h)
+\quad\Longrightarrow\quad
+-\mathbf x\in P(\mathbf h).
+\]
+
+The selected normal directions span \(\mathbb E^3\), so the intersection is
+bounded for every positive support register. Thus \(P(\mathbf h)\) is a
+centrally symmetric convex polytope.
+
+\subsection{The regular state}
+
+There exists \(h_0>0\) such that
+\[
+D=P(h_0\mathbf 1),
+\qquad
+\mathbf 1=(1,1,1,1,1,1).
+\]
+
+Hence the regular dodecahedron is represented by six equal support numbers.
+The positive uniform ray is
+\[
+U_+
+=
+\{h\mathbf 1:h>0\}.
+\]
+
+Section~4 proves that this ray is precisely the regular Euclidean similarity
+family in the fixed-normal realization.
+
+\subsection{Support space and admissibility}
+
+The support register lies in the six-dimensional vector space
+\[
+\mathbb R^6.
+\]
+
+The positive orthant
+\[
+\mathbb R_{>0}^6
+\]
+is the ambient support domain. Positivity keeps every opposite plane pair
+at positive distance from the origin.
+
+Positivity alone does not preserve dodecahedral incidence. Large support
+variations may make a defining inequality redundant, contract an edge, or
+alter the vertex structure. Section~4 therefore restricts the geometric
+results to the connected support chamber containing \(h_0\mathbf 1\) and
+preserving the dodecahedral combinatorial type.
+
+\subsection{Completeness of the support register}
+
+Within the active fixed-normal family, the support register uniquely
+determines the realization.
+
+\begin{proposition}[Uniqueness of the support register]
+Let
+\[
+\mathbf h,\mathbf k\in\mathbb R_{>0}^6.
+\]
+Assume that all twelve defining planes support genuine facets of both
+\(P(\mathbf h)\) and \(P(\mathbf k)\). If
+\[
+P(\mathbf h)=P(\mathbf k),
+\]
+then
+\[
+\mathbf h=\mathbf k.
+\]
+\end{proposition}
+
+\begin{proof}
+For each \(i\), the active facet with outward normal \(\mathbf n_i\) has
+support value
+\[
+\max_{\mathbf x\in P(\mathbf h)}
+\mathbf n_i\cdot\mathbf x
+=
+h_i.
+\]
+
+The same support value equals \(k_i\) for \(P(\mathbf k)\). Equal convex
+polytopes have equal support values in every direction, so
+\[
+h_i=k_i
+\]
+for all \(i\).
+\end{proof}
+
+Thus the six coordinates are complete for the declared fixed-normal,
+origin-centered, active-facet family.
+
+\subsection{Symmetry action}
+
+Let \(\Gamma\) be the rotational symmetry group of the regular
+dodecahedron. Each \(g\in\Gamma\) induces a permutation
+\[
+\pi_g\in S_6
+\]
+of the opposite-face pairs.
+
+Define
+\[
+\rho(g)(h_1,\ldots,h_6)
+=
+(h_{\pi_g^{-1}(1)},\ldots,h_{\pi_g^{-1}(6)}).
+\]
+
+Then
+\[
+\rho(g_1g_2)
+=
+\rho(g_1)\rho(g_2),
+\]
+so \(\rho\) is a linear permutation representation on \(\mathbb R^6\).
+
+Each \(\rho(g)\) preserves the standard inner product, coordinate sums,
+the positive orthant, and the uniform vector \(\mathbf 1\).
+
+The realization is equivariant:
+\[
+P(\rho(g)\mathbf h)
+=
+gP(\mathbf h).
+\]
+
+Thus coordinate permutation in support space agrees with Euclidean rotation
+of the realized polytope.
+
+\subsection{Scope}
+
+The family \(P(\mathbf h)\) varies only the six common distances of
+opposite supporting plane pairs. It keeps fixed
+
+\begin{itemize}
+\item the twelve regular dodecahedral normal directions;
+\item the common center at the origin;
+\item equality of the two distances within each opposite pair; and
+\item central symmetry.
+\end{itemize}
+
+It excludes varying normal directions, unequal opposite supports,
+translations, independent face rotations, arbitrary vertex displacement,
+and non-centrally symmetric realizations.
+
+No mechanical or dynamical meaning is assigned to the support coordinates.
+They record Euclidean plane positions only.
+
+The next section derives the canonical decomposition of the support register
+into its uniform and zero-mean components.
