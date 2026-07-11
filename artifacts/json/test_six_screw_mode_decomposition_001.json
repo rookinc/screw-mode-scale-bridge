@@ -1,0 +1,48 @@
+{
+  "audit_pass": true,
+  "verdict": "equal_screw_field_is_pure_isotropic_mode",
+  "screw_count": 6,
+  "equal_screw_input": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "projection_scalar": 2.4494897427831783,
+  "isotropic_mode": [
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002
+  ],
+  "deviatoric_mode": [
+    -2.220446049250313e-16,
+    -2.220446049250313e-16,
+    -2.220446049250313e-16,
+    -2.220446049250313e-16,
+    -2.220446049250313e-16,
+    -2.220446049250313e-16
+  ],
+  "deviatoric_norm": 5.438959822042073e-16,
+  "pure_isotropic_mode": true,
+  "shape_change_derived": false,
+  "scale_change_derived": false,
+  "dodecahedral_embedding_derived": false,
+  "physics_claim": false,
+  "cosmology_claim": false,
+  "force_claim": false,
+  "gap_a_closure": false,
+  "recommended_next": "test_nonuniform_screw_modes_against_shape_deformation_001",
+  "boundary": [
+    "Linear six-axis mode decomposition only.",
+    "No geometric embedding.",
+    "No expansion theorem.",
+    "No force law.",
+    "No cosmology.",
+    "No physics."
+  ]
+}
